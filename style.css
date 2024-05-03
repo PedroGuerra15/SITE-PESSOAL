@@ -1,0 +1,173 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/background2.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: white; 
+    height: 100%;
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#sobre{
+    font-size: 30px;
+    text-align: center;
+}
+
+#educacao{
+    font-size: 30px;
+    text-align: center;
+}
+
+#habilidades{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#habilidades > * {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: left; 
+}
+
+.sobre {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 90px; 
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.sobre:hover {
+    background-color: rgb(9, 9, 128); 
+}
+
+.educacaoHabilidades{
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 90px; 
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.educacaoHabilidades:hover {
+    background-color: rgb(9, 9, 128);
+}
+
+.contato {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 90px; 
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.contato:hover {
+    background-color: rgb(9, 9, 128);
+}
+
+.container {
+    text-align: center; 
+}
+
+.bloco {
+    width: 500px; 
+    height: 100px; 
+    background-color: transparent; 
+    margin: 10px; 
+    display: inline-block; 
+    font-size: 30px;
+    padding: 150px;
+}
+
+.perfil{
+    text-align: center;
+}
+
+.perfil img{
+    max-width: 100%;
+    display: block; 
+    margin: 0 auto; 
+    width: 250px;
+    border-radius: 30px;
+    border: 5px solid;
+}
+
+.linkedin{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid ;
+}
+
+.linkedin:hover {
+    background-color: rgb(9, 9, 128);
+}
+
+#contato {
+    font-size: 30px;
+    text-align: center;
+}
+
+#instagram {
+    width: 70px;
+}
+
+#linkedin {
+    width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .perfil {
+        max-width: 100%;
+        height: auto;
+    }
+    .bloco {
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+}
