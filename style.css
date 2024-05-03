@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: monospace;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #171810;
@@ -22,6 +23,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     font-size: 30px;
+    text-align: center;
 }
 
 nav ul li {
@@ -41,11 +43,12 @@ main {
 footer {
     color: #fff;
     padding: 10px 0;
+    text-align: center;
+    background-color: #565656;
 }
 
 h1{
     font-size: 60px;
-    color: #ff0000;
 }
 
 h2 {
@@ -143,7 +146,7 @@ h2 {
     background-color: rgb(9, 9, 128);
 }
 
-#contato {
+#contatoCurriculo {
     font-size: 30px;
     text-align: center;
 }
@@ -192,4 +195,8 @@ h2 {
     to{
         transform: translateX(-100%);
     }
+}
+
+#curriculoFoto {
+    width: 70px;
 }
