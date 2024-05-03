@@ -1,9 +1,12 @@
-/* Estilos gerais */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     margin: 0;
     padding: 0;
-    background-image: url('imagens/background2.jpg');
+    background-image: url(imagens/background2.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     color: white; 
@@ -156,18 +159,7 @@ h1{
     width: 70px;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-    .perfil {
-        max-width: 100%;
-        height: auto;
-    }
-    .bloco {
-        width: 100%;
-    }
-    footer {
-        text-align: center;
-    }
+#github {
+    width: 70px;
 }
+
