@@ -6,8 +6,7 @@ body {
     font-family: monospace;
     margin: 0;
     padding: 0;
-    background-image: url(imagens/background2.jpg);
-    background-size: cover; 
+    background-color: #171810;
     background-repeat: no-repeat;
     color: white; 
     height: 100%;
@@ -46,6 +45,11 @@ footer {
 
 h1{
     font-size: 60px;
+    color: #ff0000;
+}
+
+h2 {
+    color: #ff0000;
 }
 
 #sobre{
@@ -71,40 +75,24 @@ h1{
     text-align: left; 
 }
 
-.sobre {
+#especializacoes {
+    font-size: 30px;
+    text-align: center;
+}
+
+#redes_socias {
+    font-size: 15px;
+}
+
+.botoes {
     color: white; 
     text-decoration: none; 
     padding: 10px 90px; 
     border-radius: 5px;
-    border: 2px solid white;
 }
 
-.sobre:hover {
-    background-color: rgb(9, 9, 128); 
-}
-
-.educacaoHabilidades{
-    color: white; 
-    text-decoration: none; 
-    padding: 10px 90px; 
-    border-radius: 5px;
-    border: 2px solid white;
-}
-
-.educacaoHabilidades:hover {
-    background-color: rgb(9, 9, 128);
-}
-
-.contato {
-    color: white; 
-    text-decoration: none; 
-    padding: 10px 90px; 
-    border-radius: 5px;
-    border: 2px solid white;
-}
-
-.contato:hover {
-    background-color: rgb(9, 9, 128);
+.botoes:hover {
+    color: #ff0000; 
 }
 
 .container {
@@ -130,8 +118,17 @@ h1{
     display: block; 
     margin: 0 auto; 
     width: 250px;
-    border-radius: 30px;
-    border: 5px solid;
+    border-radius: 50%;
+    zoom: 1.3;
+}
+
+.perfil>img{
+    border-radius: 50%;
+    left: -2px;
+    position: relative;
+    top: 2px;
+    width: 250px;
+    opacity:0.9;
 }
 
 .linkedin{
@@ -151,15 +148,48 @@ h1{
     text-align: center;
 }
 
-#instagram {
+.logos_redes img {
     width: 70px;
 }
 
-#linkedin {
+#educacaoFoto {
     width: 70px;
 }
 
-#github {
+#habilidadesFoto {
     width: 70px;
 }
 
+#contatoFoto {
+    width: 70px;
+}
+
+.logos_img img{
+    height: 120px;
+    margin: 0 40px;
+}
+
+.logos_img{
+    white-space: nowrap;
+    animation: 15s slide infinite linear;
+}
+
+.logos{
+    display: flex;
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: transparent;
+}
+
+.logos:hover .tecnologies_img{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
