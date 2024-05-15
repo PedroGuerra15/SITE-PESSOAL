@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'Cy Grotesk Grand';
+    src: url('fontes/cy-grotesk-grand-regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Cy Grotesk Grand', sans-serif;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -11,6 +18,7 @@ body {
     background-repeat: no-repeat;
     color: white; 
     height: 100%;
+    background: url(imagens/black-elegant-background-with-copy-space.jpg);
 }
 
 header {
@@ -24,6 +32,13 @@ nav ul {
     padding: 0;
     font-size: 30px;
     text-align: center;
+}
+
+.titulo {
+    text-align:center;
+    font-size:65px;
+    margin-bottom:50px;
+    color: red;
 }
 
 nav ul li {
@@ -41,8 +56,8 @@ main {
 }
 
 footer {
-    color: #fff;
-    padding: 10px 0;
+    color: black;
+    padding: 5px 0;
     text-align: center;
     background-color: #565656;
 }
@@ -53,12 +68,38 @@ h1{
 }
 
 h2 {
-    color: #ff0000;
+    color: red;
+}
+
+.slide {
+    text-align:center;
+    background: rgb(145,2,2);
+    background: linear-gradient(90deg, rgba(145,2,2,1) 32%, rgba(215,10,10,1) 47%, rgba(145,2,2,1) 82%);
+    font-size:50px;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    overflow:hidden;
+    white-space:nowrap;
+    padding: 30px;
+    color: white;
+}
+    
+.slide:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+}
+    
+.slide:last-of-type span {
+    margin-left:auto;
+    animation: slidein 4s infinite;
 }
 
 #sobre{
     font-size: 30px;
     text-align: center;
+    flex: 1;
+    margin-left: 70px;
 }
 
 #educacao{
@@ -82,6 +123,7 @@ h2 {
 #especializacoes {
     font-size: 30px;
     text-align: center;
+    padding-top: 200px;
 }
 
 #redes_socias {
@@ -100,8 +142,31 @@ h2 {
     color: #ff0000; 
 }
 
-.container {
-    text-align: center; 
+.container2 {
+    display: flex;
+    padding-top: 150px;
+}
+
+.container3 {
+    text-align: center;
+    display: flex;
+    padding-left: 320px;
+    font-size: 20px;
+}
+
+.container3 > * {
+    margin-right: 400px; 
+}
+
+.container4 {
+    text-align: center;
+    display: flex;
+    padding-left: 330px;
+    font-size: 20px;
+}
+
+.container4 > * {
+    margin-right: 500px;
 }
 
 .bloco {
@@ -116,6 +181,7 @@ h2 {
 
 .perfil{
     text-align: center;
+    flex: 1;
 }
 
 .perfil img{
@@ -151,6 +217,7 @@ h2 {
 #contatoCurriculo {
     font-size: 30px;
     text-align: center;
+    padding-top: 100px;
 }
 
 .logos_redes img {
@@ -165,7 +232,24 @@ h2 {
     width: 70px;
 }
 
-#contatoFoto {
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.item img {
+    margin-right: 10px; 
+    width: 30px;
+}
+
+
+#curriculoFoto {
     width: 70px;
 }
 
@@ -199,6 +283,24 @@ h2 {
     }
 }
 
-#curriculoFoto {
-    width: 70px;
+@keyframes showup {
+    0% {opacity:1;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-1500px; }
+    20% { margin-left:-1000; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:1;width: auto;}
+    20% {opacity:1;width:auto;}
+    30% {width: auto;}
+    80% {opacity:1;}
+    100% {opacity:1;width:auto;}
 }
